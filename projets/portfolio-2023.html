@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../assets/images/petit_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <title>Nouveau Portfolio - Portfolio Chloé Leruez</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="../index.html" title="Redirection vers la page d'accueil">Accueil</a>
+            <a href="../projets.html" title="Redirection vers la page des projets">Mes projets</a>
+            <a href="../contact.html" title="Redirection vers la page à propos">À propos</a>
+        </nav>
+    </header>
+
+    <div>
+
+        <div class="deco" id="deco" style="--hauteur: 0px;">
+            <img src="/assets/images/feuilles_bas.svg" class="deco" alt="Feuilles décoratives en dessous du texte">
+        </div>
+
+        <div class="haut" id="haut">
+
+            <nav aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li>&nbsp;·&nbsp;</li>
+                    <li><a href="../projets.html">Projets</a></li>
+                    <li>&nbsp;·&nbsp;</li>
+                    <li aria-current="page"><b>Portfolio 2022</b></li>
+                </ol>
+            </nav>
+
+            <header>
+                <img src="/assets/images/demi_logo_soleil.svg"
+                    alt="Logo de Chloé Leruez, soleil géométrique coupé en deux" class="logo">
+                <h1>Portfolio actuel</h1>
+            </header>
+
+            <h2>Contexte</h2>
+
+            <p>
+                Insatisfaite du design de mon ancien portfolio, j'ai décidé de me créer une nouvelle <strong>identité
+                    graphique</strong>. Pour cela&nbsp;: adieu la mer et bonjour les plantes&nbsp;! Ce nouveau portfolio
+                a pour but de paraître plus <strong>chaleureux</strong>, et plus <strong>efficace</strong> en matière de
+                <strong>design</strong>, tout en demandant moins de ressources web et ainsi être plus
+                <strong>éco-responsable</strong>.
+            </p>
+        </div>
+
+        <script>
+            var hauteur = document.getElementById('haut');
+            var distance = document.getElementById('deco');
+            var style = distance.getAttribute('style');
+            distance.setAttribute('style', '--hauteur:' + hauteur.clientHeight + 'px;');
+        </script>
+
+        <div class="desc">
+
+            <h2>Mes choix graphiques</h2>
+
+            <p>
+                J'ai commencé ma réflexion par la <strong>création de mon cv</strong>, tout en gardant en tête le
+                <strong>design que je souhaitais</strong> pour mon site. Ainsi, une meilleure <strong>cohérence</strong>
+                s'est installée entre les deux designs, et permet ainsi à l'ensemble d'être plus facilement
+                <strong>identifiable et associable</strong>.<br>
+                Ma démarche a principalement été de <strong>faire évoluer</strong> mon ancien concept&nbsp;: j'ai épuré
+                le design de mon vieux portfolio tout en gardant sa structure pour un résultat plus efficace.
+            </p>
+
+            <h2>Technologies utilisées</h2>
+
+            <section>
+                <img src="/assets/images/logos/html-5.png" alt="Logo du langage HTML 5">
+                <img src="/assets/images/logos/css-3.png" alt="Logo du langage CSS 3">
+                <img src="/assets/images/logos/js.png" alt="Logo du langage JavaScript">
+                <img src="/assets/images/logos/illustrator.png" alt="Logo du logiciel Illustrator">
+                <img src="/assets/images/logos/figma.png" alt="Logo du logiciel Figma">
+                <p>&nbsp;</p>
+            </section>
+        </div>
+    </div>
+
+
+    <footer>
+        <div>
+            <h3>contact</h3>
+            <address>
+                <p>Mail&nbsp;:&nbsp;chloe.leruez@gmail.com</p>
+                <p>Téléphone&nbsp;:&nbsp;+33&nbsp;7&nbsp;83&nbsp;42&nbsp;63&nbsp;83</p>
+                <div>
+                    <p>LinkedIn&nbsp;:&nbsp; <a href="https://www.linkedin.com/in/chlo%C3%A9-leruez-965875222/"
+                            title="Redirection dans une fenêtre externe vers la page LinkedIn de l'autrice"
+                            target="_blank">Chloé Leruez <img src="/assets/images/icons/lien.svg"
+                                alt="icône ouverture fenêtre externe"> </a> </p>
+                </div>
+                <p>Behance&nbsp;:&nbsp;<a href="https://www.behance.net/chloe_leruez"
+                        title="Redirection dans une fenêtre externe vers la page Behance de l'autrice"
+                        target="_blank">chloe_leruez <img src="/assets/images/icons/lien.svg"
+                            alt="icône ouverture fenêtre externe"> </a> </p>
+                <div></div>
+                <p>GitHub&nbsp;:&nbsp;<a href="https://github.com/Chloe-Lrz"
+                        title="Redirection dans une fenêtre externe vers le profil GitHub de l'autrice"
+                        target="_blank">Chloe_Lrz <img src="/assets/images/icons/lien.svg"
+                            alt="icône ouverture fenêtre externe"> </a></p>
+                <div>
+                    <p>CodePen&nbsp;:&nbsp;<a href="https://codepen.io/b-umble-bee"
+                            title="Redirection dans une fenêtre externe vers le profil CodePen de l'autrice"
+                            target="_blank">b-umble-bee <img src="/assets/images/icons/lien.svg"
+                                alt="icône ouverture fenêtre externe"> </a></p>
+                </div>
+            </address>
+        </div>
+
+        <div>
+            <h3>navigation</h3>
+            <nav>
+                <a href="../index.html" title="Redirection vers la page d'accueil">Accueil</a><br>
+                <a href="../projets.html" title="Redirection vers la page des projets">Mes projets</a><br>
+                <a href="../contact.html" title="Redirection vers la page à propos">À propos</a><br>
+                <a href="../mentions-legales.html" title="Redirection vers la page des mentions légales">Mentions légales</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+
+</html>

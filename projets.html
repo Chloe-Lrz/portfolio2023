@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/assets/images/petit_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <script src="/assets/js/app.js"></script>
+
+    <title>Tous mes projets - Portfolio Chloé Leruez</title>
+</head>
+
+<body onload="filterCategory('all')">
+    <header>
+        <nav>
+            <a href="index.html" title="Redirection vers la page d'accueil">Accueil</a>
+            <a href="projets.html" title="Redirection vers la page des projets">Mes projets</a>
+            <a href="contact.html" title="Redirection vers la page à propos">À propos</a>
+        </nav>
+    </header>
+
+    <div>
+
+        <div class="deco" id="deco" style="--hauteur: 0px;">
+            <img src="/assets/images/feuilles_bas.svg" class="deco" alt="Feuilles décoratives en dessous du texte">
+        </div>
+
+        <div class="haut" id="haut">
+
+            <nav aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="/index.html">Accueil</a></li>
+                    <li>&nbsp;·&nbsp;</li>
+                    <li aria-current="page"><b>Projets</b></li>
+                </ol>
+            </nav>
+
+            <header>
+                <img src="/assets/images/demi_logo_soleil.svg" class="logo"
+                    alt="Logo de Chloé Leruez, soleil géométrique coupé en deux" class="logo">
+                <h1>Projets</h1>
+            </header>
+
+            <h2>À propos de mes travaux</h2>
+
+            <p>
+                Entrer dans la <strong>filière MMI</strong> a été un excellent moyen d'<strong>enrichir mon portfolio</strong> en projets intéressants&nbsp;!
+                Au travers des <strong>nombreux ateliers</strong> que nous menons, j'ai eu l'occasion de troucher à plein de <strong>domaines
+                diiférents</strong> que je ne maîtrisais pas, voire dont je n'avais pas
+                connaissance, tout en améliorant les <strong>compétences</strong> qui m'intéressaient à l'origine. <br>
+                Vous trouverez sur cette page un recensement des projets que j'ai pu mener, tant pour mes <strong>études</strong> que
+                pour des <strong>travaux personnels</strong>.
+            </p>
+        </div>
+
+        <script>
+            var hauteur = document.getElementById('haut');
+            var distance = document.getElementById('deco');
+            var style = distance.getAttribute('style');
+            distance.setAttribute('style', '--hauteur:'+hauteur.clientHeight+'px;');
+        </script>
+
+    </div>
+
+    <section class="projets_index">
+        <h2>Tous mes projets</h2>
+
+        <div id="boutons">
+            <button class="select active" onclick="filterCategory('all')">Tous</button>
+            <button class="select" onclick="filterCategory('web')">Web</button>
+            <button class="select" onclick="filterCategory('graph')">Graphisme et design</button>
+            <button class="select" onclick="filterCategory('av')">Vidéo et son</button>
+            <button class="select" onclick="filterCategory('jv')">Jeu-vidéo</button>
+            <button class="select" onclick="filterCategory('etude')">Projet d'étude</button>
+            <button class="select" onclick="filterCategory('perso')">Projet personnel</button>
+        </div>
+
+        <nav class="container">
+            <a href="/projets/portfolio-2023.html" class="projetProj web graph perso portfolio23">
+                <p>Ce portfolio</p>
+            </a>
+            <a href="" class="projetProj web graph perso leuko">
+                <p>leukopossum vitrine</p>
+            </a>
+            <!-- <a href="" class="projetProj jv graph perso pokemon">
+                <p>fangame pokemon</p>
+            </a> -->
+            <a href="/projets/maman-les-ptits-tableaux.html" class="projetProj web graph av etude tableau">
+                <p>maman les ptits tableaux</p>
+            </a>
+            <a href="/projets/conte-lu-ban.html" class="projetProj graph etude luban">
+                <p>lu ban</p>
+            </a>
+            <a href="/projets/luciole-jusqu-au-bout-du-tunnel.html" class="projetProj jv graph etude luciole">
+                <p>luciole</p>
+            </a>
+            <a href="/projets/greener.html" class="projetProj web av etude greener">
+                <p>greener_</p>
+            </a>
+            <a href="" class="projetProj graph etude v3">
+                <p>V3</p>
+            </a>
+            <a href="/projets/mission-gorokhova.html" class="projetProj av etude gorokhova">
+                <p>mission gorokhova</p>
+            </a>
+            <a href="" class="projetProj av etude goya">
+                <p>Goya perd la tête</p>
+            </a>
+            <a href="" class="projetProj graph perso dessin">
+                <p>dessins en vrac</p>
+            </a>
+            <a href="/projets/portfolio-2022.html" class="projetProj web graph perso portfolio22">
+                <p>Portfolio 2022</p>
+            </a>
+            <a href="/projets/protocole-3c.html" class="projetProj av etude protocole">
+                <p>protocole 3c</p>
+            </a>
+            <a href="/projets/apollotheque.html" class="projetProj web etude apollo">
+                <p>apollothèque</p>
+            </a>
+            <a href="/projets/george.html" class="projetProj graph etude george">
+                <p>How George became happy</p>
+            </a>
+            <!-- <a href="" class="projetProj graph etude tehtris">
+                <p>tehtris</p>
+            </a>
+            <a href="" class="projetProj graph etude ecosysteme">
+                <p>ecosysteme numérique</p>
+            </a> -->
+            <a href="/projets/modele-lasswell.html" class="projetProj av etude lasswell">
+                <p>le modèle laswell</p>
+            </a>
+            <a href="/projets/refonte-du-capc.html" class="projetProj web graph etude capc">
+                <p>refonte du capc</p>
+            </a>
+            <!-- <a href="" class="projetProj graph perso seoree">
+                <p>séorée</p>
+            </a> -->
+        </nav>
+    </section>
+
+    <footer>
+        <div>
+            <h3>contact</h3>
+            <address>
+                <p>Mail&nbsp;:&nbsp;chloe.leruez@gmail.com</p>
+                <p>Téléphone&nbsp;:&nbsp;+33&nbsp;7&nbsp;83&nbsp;42&nbsp;63&nbsp;83</p>
+                <div>
+                    <p>LinkedIn&nbsp;:&nbsp; <a href="https://www.linkedin.com/in/chlo%C3%A9-leruez-965875222/"
+                            title="Redirection dans une fenêtre externe vers la page LinkedIn de l'autrice"
+                            target="_blank">Chloé Leruez <img src="/assets/images/icons/lien.svg"
+                                alt="icône ouverture fenêtre externe"> </a> </p>
+                </div>
+                <p>Behance&nbsp;:&nbsp;<a href="https://www.behance.net/chloe_leruez"
+                        title="Redirection dans une fenêtre externe vers la page Behance de l'autrice"
+                        target="_blank">chloe_leruez <img src="/assets/images/icons/lien.svg"
+                            alt="icône ouverture fenêtre externe"> </a> </p>
+                <div></div>
+                <p>GitHub&nbsp;:&nbsp;<a href="https://github.com/Chloe-Lrz"
+                        title="Redirection dans une fenêtre externe vers le profil GitHub de l'autrice"
+                        target="_blank">Chloe_Lrz <img src="/assets/images/icons/lien.svg"
+                            alt="icône ouverture fenêtre externe"> </a></p>
+                <div>
+                    <p>CodePen&nbsp;:&nbsp;<a href="https://codepen.io/b-umble-bee"
+                            title="Redirection dans une fenêtre externe vers le profil CodePen de l'autrice"
+                            target="_blank">b-umble-bee <img src="/assets/images/icons/lien.svg"
+                                alt="icône ouverture fenêtre externe"> </a></p>
+                </div>
+            </address>
+        </div>
+
+        <div>
+            <h3>navigation</h3>
+            <nav>
+                <a href="index.html" title="Redirection vers la page d'accueil">Accueil</a><br>
+                <a href="contact.html" title="Redirection vers la page des projets">Mes projets</a><br>
+                <a href="projets.html" title="Redirection vers la page à propos">À propos</a><br>
+                <a href="mentions-legales.html" title="Redirection vers la page des mentions légales">Mentions légales</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+
+</html>

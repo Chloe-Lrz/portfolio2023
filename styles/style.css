@@ -1,0 +1,636 @@
+:root {
+    --blanc1: #F5FCF5;
+    --blanc2: #DCEBDC;
+    --rouge: #EE1409;
+    --rose1: #FC5656;
+    --rose2: #CC333F;
+    --vert: #273B3F;
+}
+
+@font-face {
+    font-family: 'Degila';
+    font-style: normal;
+    src: url('/assets/fonts/Degila.ttf') format(truetype);
+    src: url('/assets/fonts/Degila.woff2') format(woff2);
+    src: url('/assets/fonts/Degila.woff') format(woff);
+    src: url('/assets/fonts/Degila.otf') format(otf)
+}
+
+@font-face {
+    font-family: 'Degila';
+    font-style: italic;
+    src: url('/assets/fonts/Degila\ Italic.ttf') format(truetype);
+    src: url('/assets/fonts/Degila\ Italic.woff') format(woff);
+    src: url('/assets/fonts/Degila\ Italic.woff2') format(woff2);
+    src: url('/assets/fonts/Degila\ Italic.otf') format(otf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--blanc2);
+    color: var(--vert);
+}
+
+h1 {
+    font-family: 'Degila', sans-serif;
+    font-size: 35px;
+}
+
+h2 {
+    font-family: 'Degila', sans-serif;
+    font-size: 25px;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+
+h3 {
+    font-family: 'Sarabun', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    position: absolute;
+    color: var(--blanc2);
+}
+
+p {
+    font-family: 'Sarabun', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.btn {
+    font-family: 'Degila', sans-serif;
+    font-size: 20px;
+    border: 2px solid var(--rouge);
+    border-radius: 10px;
+    color: var(--blanc2);
+    padding: 9px 18px;
+    margin: 10px 0;
+    position: absolute;
+}
+
+.btn:hover {
+    background-color: var(--rouge);
+    transition: 0.5s;
+}
+
+strong {
+    font-weight: 700;
+}
+
+i {
+    font-style: italic;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+header {
+    font-family: 'Degila', sans-serif;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav {
+    text-align: center;
+    margin-top: 3%;
+}
+
+header nav a {
+    color: var(--vert);
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+header nav a::after,
+footer div address a::after,
+footer div nav a::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    top: 100%;
+    left: 0;
+    background: var(--rouge);
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+header nav a:hover,
+footer div address a:hover,
+footer div nav a:hover {
+    opacity: 75%;
+}
+
+header nav a:hover::after,
+footer div address a:hover::after,
+footer div nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+header nav :nth-child(2) {
+    margin: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+.haut {
+    background-color: var(--vert);
+    border-radius: 30px;
+    margin: 3%;
+    padding: 5% 10%;
+    color: var(--blanc1);
+    position: relative;
+    width: 73%;
+    --lenght: 100%;
+}
+
+.haut header,
+.foot {
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.haut header {
+    position: relative;
+    margin-top: 50px;
+}
+
+.logo {
+    opacity: 40%;
+}
+
+.foot img {
+    /* position: relative; */
+    margin-right: 10px;
+}
+
+.foot {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.foot h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.haut p {
+    max-width: 800px;
+}
+
+.haut p a {
+    position: relative;
+    text-decoration: underline;
+}
+
+.haut>header,
+.haut>p,
+.haut>a {
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 800px) {
+    .deco {
+        position: absolute;
+        width: 100%;
+        top: calc(var(--hauteur)*55/100);
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .deco {
+        position: absolute;
+        width: 100%;
+        top: calc(var(--hauteur)*52/100);
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .deco {
+        position: absolute;
+        width: 100%;
+        top: calc(var(--hauteur)*48/100);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .deco {
+        position: absolute;
+        width: 100%;
+        top: calc(var(--hauteur)*42/100);
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .deco {
+        position: absolute;
+        width: 100%;
+        top: calc(var(--hauteur)*38/100);
+    }
+}
+
+
+
+
+.haut nav ol {
+    display: flex;
+    position: relative;
+    margin-bottom: 80px;
+    color: var(--blanc1);
+}
+
+.haut nav a {
+    position: relative;
+    text-decoration: underline;
+    color: var(--blanc1);
+}
+
+.haut nav a::before {
+    background: rgb(252, 86, 86);
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+
+}
+
+.haut nav a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+
+
+
+
+
+
+
+
+.projets_index {
+    margin: 80px 13%;
+}
+
+.projets_index nav {
+    margin-top: 40px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projet {
+    background-image: url("/assets/images/Rectangle.svg");
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    background-size: cover;
+    height: 220px;
+    width: 350px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.projets_index aside {
+    display: flex;
+    width: 100%;
+    justify-self: center;
+    justify-items: center;
+
+}
+
+.projet p,
+.projetProj p {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 36px;
+    padding: 25% 15%;
+    color: var(--blanc1);
+    font-weight: 700;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 25px;
+
+}
+
+.projets_index .btn {
+    color: var(--vert);
+    margin-bottom: 40px;
+    position: absolute;
+}
+
+.projets_index .btn:hover,
+.desc .btn:hover {
+    color: var(--blanc1);
+}
+
+
+
+
+
+
+
+
+.desc {
+    margin: 40px 13%;
+    max-width: 800px;
+    color: var(--vert);
+}
+
+.desc a {
+    color: var(--vert);
+    position: relative;
+    text-decoration: underline;
+}
+
+.desc p {
+    margin-bottom: 40px;
+}
+
+.desc:last-child {
+    margin-bottom: 80px;
+}
+
+.desc .btn img {
+    width: 14px;
+    color: var(--vert);
+}
+
+.desc section img,
+.desc p a img {
+    margin-right: 10px;
+}
+
+/* .desc section :nth-last-child(2) {
+    margin: 0 0 0 10px;
+}
+
+
+.desc section :first-child{
+    margin: 0 10px 0 0;
+} */
+
+.videoResponsive {
+    padding-bottom: 56.25%;
+    height: 0;
+    position: relative;
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+.videoResponsive iframe,
+.videoResponsive object,
+.videoResponsive embed {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.projets_index div {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.container {
+    overflow: hidden;
+}
+
+.projetProj {
+    float: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    text-decoration: none;
+    height: 220px;
+    width: 350px;
+    margin-bottom: 40px;
+    text-align: center;
+    display: none;
+    position: relative;
+}
+
+.show {
+    display: block;
+}
+
+.select {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Degila', sans-serif;
+    font-size: 18px;
+    color: var(--vert);
+    border: 2px solid var(--vert);
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: var(--blanc2);
+    margin-bottom: 20px;
+}
+
+
+.select:hover {
+    background-color: var(--vert);
+    color: var(--blanc1);
+    transition: 0.5s;
+}
+
+.select.active {
+    background-color: var(--rouge);
+    color: var(--blanc1);
+    border: 2px solid var(--rouge);
+}
+
+
+
+
+
+
+
+.portfolio23 {
+    background-image: url("/assets/images/projets/portfolio2023.png");
+}
+
+.portfolio22 {
+    background-image: url("/assets/images/projets/portfolio2022.png");
+}
+
+.dessin,
+.pokemon,
+.goya,
+.protocole,
+.tehtris,
+.seoree {
+    background-image: url("/assets/images/Rectangle.svg");
+}
+
+.tableau {
+    background-image: url("/assets/images/projets/tableau.png");
+}
+
+.leuko {
+    background-image: url("/assets/images/projets/leuko.png");
+}
+
+.luban {
+    background-image: url("/assets/images/projets/luban.png");
+}
+
+.luciole {
+    background-image: url("/assets/images/projets/luciole.png");
+}
+
+.v3 {
+    background-image: url("/assets/images/projets/v3.png");
+}
+
+.gorokhova {
+    background-image: url("/assets/images/projets/gorokhova.png");
+}
+
+.greener {
+    background-image: url("/assets/images/projets/greener.png");
+}
+
+.apollo {
+    background-image: url("/assets/images/projets/apollo.png");
+}
+
+.george {
+    background-image: url("/assets/images/projets/george.png");
+}
+
+.ecosysteme {
+    background-image: url("/assets/images/projets/ecosysteme.png");
+}
+
+.lasswell {
+    background-image: url("/assets/images/projets/lasswell.png");
+}
+
+.capc {
+    background-image: url("/assets/images/projets/capc.png");
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: var(--vert);
+    border-radius: 30px 30px 0 0;
+    margin: 3%;
+    margin-bottom: 0;
+    padding: 10%;
+    padding-bottom: 2%;
+    color: var(--blanc1);
+    width: 73%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer div {
+    margin-right: 20%;
+}
+
+footer address a,
+footer address p,
+footer nav a {
+    color: var(--blanc1);
+    font-family: 'Sarabun', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer address {
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+
+footer address p a img {
+    height: 14px;
+}
+
+footer nav {
+    line-height: 30px;
+}

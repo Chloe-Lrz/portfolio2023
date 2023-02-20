@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="revised" content="16/02/2023">
+    <meta name="description"
+        content="Chloé Leruez, étudiante créative en deuxième année de BUT métiers du multimédia et de l'internet (MMI), localisée sur Bordeaux et les Hautes Pyrénées.">
+
+    <link rel="shortcut icon" href="/assets/images/petit_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,700;1,300;1,700&display=swap"
+        rel="stylesheet">
+
+    <title>Portfolio Chloe Leruez</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" title="Redirection vers la page d'accueil">Accueil</a>
+            <a href="projets.html" title="Redirection vers la page des projets">Mes projets</a>
+            <a href="contact.html" title="Redirection vers la page à propos">À propos</a>
+        </nav>
+    </header>
+
+    <div>
+
+        <div class="deco" id="deco" style="--hauteur: 0px;">
+            <img src="/assets/images/feuilles_bas.svg" class="deco" alt="Feuilles décoratives en dessous du texte">
+        </div>
+
+        <div class="haut" id="haut">
+            <header>
+                <img src="/assets/images/demi_logo_soleil.svg"
+                    alt="Logo de Chloé Leruez, soleil géométrique coupé en deux" class="logo">
+                <h1>Chloé&nbsp;LERUEZ</h1>
+                <div class="foot">
+                    <img src="/assets/images/line.svg" alt="Ligne décorative">
+                    <h2>Portfolio</h2>
+                </div>
+            </header>
+
+            <h2>Un peu de moi</h2>
+
+            <p>
+                <strong>Créative</strong>, j'ai toujours eu l'attrait du <strong>beau et de l'original</strong>, ainsi
+                que l'envie de <strong>fabriquer des choses moi-même</strong>. J'ai commencé très jeune à créer des
+                histoires, dotées d'univers complexes et de personnages atypiques. J'ai ensuite développé
+                cette créativité par moi-même dans de nombreux autres domaines&nbsp;: le <strong>dessin</strong>,
+                l'<strong>écriture</strong>, puis le <strong>design</strong> et enfin, la
+                <strong>communication</strong>. <br><br>
+                Si je suis entrée en MMI (<i>Métiers du Multimédia et de l'Internet</i>) pour cet aspect créatif cher à
+                mon coeur, j'ai pu y apprendre des notions de <strong>développement web</strong> et de
+                <strong>motion design</strong> qui enrichissent mes bagages et me permettent d'être encore
+                plus multifonction&nbsp;! <br><br>
+                C'est tous ces pans de moi que j'espère réussir à mettre en avant sur ce portfolio, afin de laissez
+                transparaître qui je suis.<br>
+                Bonne découverte&nbsp;!
+            </p>
+
+            <a href="contact.html" class="btn">En savoir plus sur moi</a>
+
+            <p><br></p>
+        </div>
+
+        <script>
+            var hauteur = document.getElementById('haut');
+            var distance = document.getElementById('deco');
+            var style = distance.getAttribute('style');
+            distance.setAttribute('style', '--hauteur:'+hauteur.clientHeight+'px;');
+        </script>
+
+    <section class="projets_index">
+        <h2>Mes derniers projets</h2>
+
+        <nav>
+            <a href="/projets/maman-les-ptits-tableaux.html" class="projet tableau" title="Redirection vers la page du projet 'Maman les petits tableaux'">
+                <p>maman les ptits tableaux</p>
+            </a>
+            <a href="/projets/conte-lu-ban.html" class="projet luban" title="Redirection vers la page du projet 'Lu Ban'">
+                <p>lu ban</p>
+            </a>
+            <a href="/projets/luciole-jusqu-au-bout-du-tunnel.html" class="projet luciole"
+                title="Redirection vers la page du projet 'Luciole jusqu'au bout du tunnel'">
+                <p>luciole</p>
+            </a>
+        </nav>
+
+        <aside>
+            <a href="projets.html" class="btn" title="Redirection vers la page projets">Voir plus de projets</a>
+        </aside>
+    </section>
+
+    <footer>
+        <div>
+            <h3>contact</h3>
+            <address>
+                <p>Mail&nbsp;:&nbsp;chloe.leruez@gmail.com</p>
+                <p>Téléphone&nbsp;:&nbsp;+33&nbsp;7&nbsp;83&nbsp;42&nbsp;63&nbsp;83</p>
+                <div>
+                    <p>LinkedIn&nbsp;:&nbsp; <a href="https://www.linkedin.com/in/chlo%C3%A9-leruez-965875222/"
+                            title="Redirection dans une fenêtre externe vers la page LinkedIn de l'autrice"
+                            target="_blank">Chloé Leruez <img src="/assets/images/icons/lien.svg"
+                                alt="icône ouverture fenêtre externe"> </a> </p>
+                </div>
+                <p>Behance&nbsp;:&nbsp;<a href="https://www.behance.net/chloe_leruez"
+                        title="Redirection dans une fenêtre externe vers la page Behance de l'autrice"
+                        target="_blank">chloe_leruez <img src="/assets/images/icons/lien.svg"
+                            alt="icône ouverture fenêtre externe"> </a> </p>
+                <div></div>
+                <p>GitHub&nbsp;:&nbsp;<a href="https://github.com/Chloe-Lrz"
+                        title="Redirection dans une fenêtre externe vers le profil GitHub de l'autrice"
+                        target="_blank">Chloe_Lrz <img src="/assets/images/icons/lien.svg"
+                            alt="icône ouverture fenêtre externe"> </a></p>
+                <div>
+                    <p>CodePen&nbsp;:&nbsp;<a href="https://codepen.io/b-umble-bee"
+                            title="Redirection dans une fenêtre externe vers le profil CodePen de l'autrice"
+                            target="_blank">b-umble-bee <img src="/assets/images/icons/lien.svg"
+                                alt="icône ouverture fenêtre externe"> </a></p>
+                </div>
+            </address>
+        </div>
+
+        <div>
+            <h3>navigation</h3>
+            <nav>
+                <a href="index.html" title="Redirection vers la page d'accueil">Accueil</a><br>
+                <a href="contact.html" title="Redirection vers la page des projets">Mes projets</a><br>
+                <a href="projets.html" title="Redirection vers la page à propos">À propos</a><br>
+                <a href="mentions-legales.html" title="Redirection vers la page des mentions légales">Mentions légales</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+
+</html>
