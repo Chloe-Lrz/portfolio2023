@@ -669,6 +669,7 @@ header nav :nth-child(2) {
     flex-wrap:wrap;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 80px;
 }
 
 .skills div{
