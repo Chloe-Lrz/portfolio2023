@@ -61,11 +61,19 @@ a {
     color: var(--blanc2);
 }
 
-p {
+p, figcaption {
     font-family: 'Sarabun', sans-serif;
     font-size: 20px;
     font-weight: 400;
     font-style: normal;
+}
+
+figcaption{
+    margin-bottom: 20px;
+}
+
+figure{
+    margin: 40px 0;
 }
 
 .btn {
@@ -100,6 +108,11 @@ li {
     font-size: 18px;
     font-weight: 400;
     font-style: normal;
+}
+
+.source{
+    font-size: 16px;
+    margin-top: 80px;
 }
 
 
@@ -138,7 +151,7 @@ header nav a {
 
 
 
-header nav a:hover, .haut nav ol li a:hover, .haut p a:hover, .desc p a:hover {
+.haut nav ol li a:hover, .haut p a:hover, .desc p a:hover {
     font-weight: 700;
 }
 /* header nav a:after, .haut nav ol li a:after, .haut p a:after, .desc p a:after {
@@ -583,7 +596,6 @@ header nav :nth-child(2) {
 .dessin,
 .pokemon,
 .goya,
-.protocole,
 .tehtris,
 .seoree {
     background-image: url("/assets/images/Rectangle.svg");
@@ -635,6 +647,10 @@ header nav :nth-child(2) {
 
 .capc {
     background-image: url("/assets/images/projets/capc.png");
+}
+
+.protocole {
+    background-image: url("/assets/images/projets/protocole3c.png");
 }
 
 
