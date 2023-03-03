@@ -308,11 +308,11 @@ header nav :nth-child(2) {
     margin-bottom: 40px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
     .deco {
         position: absolute;
         width: 100%;
-        top: calc(var(--hauteur)*55/100);
+        top: calc(var(--hauteur)*54/100);
     }
 }
 
@@ -336,7 +336,7 @@ header nav :nth-child(2) {
     .deco {
         position: absolute;
         width: 100%;
-        top: calc(var(--hauteur)*42/100);
+        top: calc(var(--hauteur)*46/100);
     }
 }
 
@@ -344,7 +344,7 @@ header nav :nth-child(2) {
     .deco {
         position: absolute;
         width: 100%;
-        top: calc(var(--hauteur)*38/100);
+        top: calc(var(--hauteur)*34/100);
     }
 }
 
