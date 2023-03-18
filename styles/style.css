@@ -601,9 +601,14 @@ header nav :nth-child(2) {
     background-image: url("/assets/images/Rectangle.svg");
 }
 
+.miecolo {
+    background-image: url("/assets/images/projets/miecolo.png");
+}
+
 .tableau {
     background-image: url("/assets/images/projets/tableau.png");
 }
+
 
 .leuko {
     background-image: url("/assets/images/projets/leuko.png");
