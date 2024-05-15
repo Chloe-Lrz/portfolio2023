@@ -593,6 +593,30 @@ header nav :nth-child(2) {
     background-image: url("/assets/images/projets/portfolio2022.png");
 }
 
+.cibc {
+    background-image: url("/assets/images/projets/cibc.jpg");
+}
+
+.musba {
+    background-image: url("/assets/images/projets/musba.jpg");
+}
+
+.halyna {
+    background-image: url("/assets/images/projets/halyna.jpg");
+}
+
+.euz {
+    background-image: url("/assets/images/projets/euziere.jpg");
+}
+
+.cspo {
+    background-image: url("/assets/images/projets/cspo.jpg");
+}
+
+.boc {
+    background-image: url("/assets/images/projets/boc.jpg");
+}
+
 .dessin,
 .pokemon,
 .goya,
