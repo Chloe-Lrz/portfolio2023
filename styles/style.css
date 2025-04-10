@@ -99,6 +99,7 @@ strong {
 
 i {
     font-style: italic;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 ol,
@@ -295,6 +296,10 @@ header nav :nth-child(2) {
     top:0;
 }
 
+.home{
+    margin: 125px 3%;
+}
+
 .haut.home img{
     position: absolute;
     width: 250px;
@@ -446,7 +451,7 @@ header nav :nth-child(2) {
 
 .desc img.dessins {
     max-width: 75vw;
-    margin-bottom:20px;
+    margin-top:40px;
 }
 
 .videoResponsive {
@@ -544,6 +549,10 @@ header nav :nth-child(2) {
     background-image: url("/assets/images/projets/dessins.png");
 }
 
+.fiche {
+    background-image: url("/assets/images/projets/fiche.png");
+}
+
 .portfolio23 {
     background-image: url("/assets/images/projets/portfolio2023.png");
 }
@@ -574,6 +583,10 @@ header nav :nth-child(2) {
 
 .boc {
     background-image: url("/assets/images/projets/boc.jpg");
+}
+
+.petitpote{
+    background-image: url("/assets/images/projets/petitpote.png");
 }
 
 .pokemon,
@@ -744,5 +757,21 @@ footer nav {
 
     .angles img{
         max-width:50px;
+    }
+
+    .home{
+        margin: 80px 3%;
+    }
+
+    .home img{
+        width:180px !important;
+    }
+
+    .home header img{
+        width:125px !important;
+    }
+
+    footer{
+        padding-bottom: 15%;;
     }
 }
