@@ -396,14 +396,14 @@ header nav :nth-child(2) {
 
 }
 
-.projets_index .btn, .moi_index .btn {
+.projets_index .btn, .moi_index .btn, .btn {
     color: var(--sombre);
     margin-bottom: 40px;
     position: absolute;
 }
 
 .projets_index .btn:hover, .moi_index .btn:hover,
-.desc .btn:hover {
+.desc .btn:hover, .btn:hover {
     color: var(--blanc1);
 }
 
