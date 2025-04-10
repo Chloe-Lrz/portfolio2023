@@ -589,9 +589,13 @@ header nav :nth-child(2) {
     background-image: url("/assets/images/projets/petitpote.png");
 }
 
+
+.tehtris{
+    background-image: url("/assets/images/projets/tehtris.jpg");
+}
+
 .pokemon,
 .goya,
-.tehtris,
 .seoree {
     background-image: url("/assets/images/Rectangle.svg");
 }
