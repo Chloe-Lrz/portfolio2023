@@ -1,10 +1,10 @@
 :root {
     --blanc1: #F5FCF5;
-    --blanc2: #DCEBDC;
-    --rouge: #EE1409;
+    --blanc2: #FCF1ED;
+    --rouge: #17875F;
     --rose1: #FC5656;
     --rose2: #CC333F;
-    --vert: #273B3F;
+    --sombre: #501108;
 }
 
 @font-face {
@@ -33,7 +33,8 @@
 
 body {
     background-color: var(--blanc2);
-    color: var(--vert);
+    color: var(--sombre);
+    overflow-x: hidden;
 }
 
 h1 {
@@ -138,12 +139,12 @@ header nav {
 }
 
 header nav a {
-    color: var(--vert);
+    color: var(--sombre);
     position: relative;
 }
 
 .here{
-    color: #249167;
+    color: #C44201;
 }
 
 
@@ -154,48 +155,6 @@ header nav a {
 .haut nav ol li a:hover, .haut p a:hover, .desc p a:hover {
     font-weight: 700;
 }
-/* header nav a:after, .haut nav ol li a:after, .haut p a:after, .desc p a:after {
-*/
-
-
-/* .hovertext {
-    border-radius: 10px;
-    position: relative;
-    color: #f5fcf5;
-}
-.hovertext:after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-	border: solid 2px var(--rose1);
-    content:'';
-}
-.hovertext:after {
-    top: -7px;
-    left: -7px;
-    padding: 7px;
-    transition: transform 0.2s, opacity 0.2s;
-    opacity: 0;
-    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
-    -webkit-transform: scale(.8);
-    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
-    -moz-transform: scale(.8);
-    -ms-transform: scale(.8);
-    transition: transform 0.2s, opacity 0.2s;
-    transform: scale(.8);
-}
- .hovertext:hover {
-    color: #F5FCF5;
-}
-.hovertext:hover a {
-    color: #F5FCF5;
-}
-.hovertext:hover:after {
-    transform: scale(1);
-    opacity: 1;
-} */
-
 
 
 
@@ -252,11 +211,10 @@ header nav :nth-child(2) {
 
 
 .haut {
-    background-color: var(--vert);
     border-radius: 30px;
     margin: 3%;
-    padding: 5% 10%;
-    color: var(--blanc1);
+    padding: 0 10%;
+    color: var(--sombre);
     position: relative;
     width: 73%;
     --lenght: 100%;
@@ -279,8 +237,13 @@ header nav :nth-child(2) {
 }
 
 .foot img {
-    /* position: relative; */
-    margin-right: 10px;
+    position: relative !important;
+    margin-right: 10px !important;
+    width: 125px !important;
+    top: 0 !important;
+    left: 0!important;
+    transform: translate(0, 0)!important;
+    opacity: 1!important;
 }
 
 .foot {
@@ -308,45 +271,38 @@ header nav :nth-child(2) {
     margin-bottom: 40px;
 }
 
-/* @media screen and (max-width: 500px) {
-    .deco {
-        position: absolute;
-        width: 100%;
-        top: calc(var(--hauteur)*54/100);
-    }
+.angles img.gauche {
+    position:absolute;
+    width:20vw;
+    max-width: 450px;
+    top:0;
+    left:20px;
 }
 
-@media screen and (min-width: 500px) {
-    .deco {
-        position: absolute;
-        width: 100%;
-        top: calc(var(--hauteur)*52/100);
-    }
+.angles img.droit {
+    position:absolute;
+    width:20vw;
+    max-width: 450px;
+    top:0;
+    right:20px;
 }
 
-@media screen and (min-width: 900px) {
-    .deco {
-        position: absolute;
-        width: 100%;
-        top: calc(var(--hauteur)*48/100);
-    }
+.angles{
+    display: flex; 
+    width: 100vw;
+    z-index: -10;
+    position:absolute;
+    top:0;
 }
 
-@media screen and (min-width: 1200px) {
-    .deco {
-        position: absolute;
-        width: 100%;
-        top: calc(var(--hauteur)*46/100);
-    }
+.haut.home img{
+    position: absolute;
+    width: 250px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
 }
-
-@media screen and (min-width: 2000px) {
-    .deco {
-        position: absolute;
-        width: 100%;
-        top: calc(var(--hauteur)*34/100);
-    }
-} */
 
 
 
@@ -355,13 +311,13 @@ header nav :nth-child(2) {
     display: flex;
     position: relative;
     margin-bottom: 80px;
-    color: var(--blanc1);
+    color: var(--sombre);
 }
 
 .haut nav a {
     position: relative;
     text-decoration: underline;
-    color: var(--blanc1);
+    color: var(--sombre);
 }
 
 .haut nav a::before {
@@ -389,6 +345,9 @@ header nav :nth-child(2) {
 
 
 
+.moi_index {
+    margin: 130px 13%;
+}
 
 .projets_index {
     margin: 80px 13%;
@@ -437,13 +396,13 @@ header nav :nth-child(2) {
 
 }
 
-.projets_index .btn {
-    color: var(--vert);
+.projets_index .btn, .moi_index .btn {
+    color: var(--sombre);
     margin-bottom: 40px;
     position: absolute;
 }
 
-.projets_index .btn:hover,
+.projets_index .btn:hover, .moi_index .btn:hover,
 .desc .btn:hover {
     color: var(--blanc1);
 }
@@ -458,11 +417,11 @@ header nav :nth-child(2) {
 .desc {
     margin: 40px 13%;
     max-width: 800px;
-    color: var(--vert);
+    color: var(--sombre);
 }
 
 .desc a {
-    color: var(--vert);
+    color: var(--sombre);
     position: relative;
     text-decoration: underline;
 }
@@ -477,7 +436,7 @@ header nav :nth-child(2) {
 
 .desc .btn img {
     width: 14px;
-    color: var(--vert);
+    color: var(--sombre);
 }
 
 .desc section img,
@@ -485,14 +444,10 @@ header nav :nth-child(2) {
     margin-right: 10px;
 }
 
-/* .desc section :nth-last-child(2) {
-    margin: 0 0 0 10px;
+.desc img.dessins {
+    max-width: 75vw;
+    margin-bottom:20px;
 }
-
-
-.desc section :first-child{
-    margin: 0 10px 0 0;
-} */
 
 .videoResponsive {
     padding-bottom: 56.25%;
@@ -557,8 +512,8 @@ header nav :nth-child(2) {
     cursor: pointer;
     font-family: 'Degila', sans-serif;
     font-size: 18px;
-    color: var(--vert);
-    border: 2px solid var(--vert);
+    color: var(--sombre);
+    border: 2px solid var(--sombre);
     border-radius: 10px;
     padding: 5px 10px;
     background-color: var(--blanc2);
@@ -568,7 +523,7 @@ header nav :nth-child(2) {
 
 
 .select:hover {
-    background-color: var(--vert);
+    background-color: var(--sombre);
     color: var(--blanc1);
     transition: 0.5s;
 }
@@ -584,6 +539,10 @@ header nav :nth-child(2) {
 
 
 
+
+.dessin {
+    background-image: url("/assets/images/projets/dessins.png");
+}
 
 .portfolio23 {
     background-image: url("/assets/images/projets/portfolio2023.png");
@@ -617,7 +576,6 @@ header nav :nth-child(2) {
     background-image: url("/assets/images/projets/boc.jpg");
 }
 
-.dessin,
 .pokemon,
 .goya,
 .tehtris,
@@ -724,12 +682,12 @@ header nav :nth-child(2) {
 
 
 footer {
-    background-color: var(--vert);
+    background-color: var(--sombre);
     border-radius: 30px 30px 0 0;
     margin: 3%;
     margin-bottom: 0;
     padding: 10%;
-    padding-bottom: 2%;
+    padding-bottom: 5%;
     color: var(--blanc1);
     width: 73%;
 
@@ -766,4 +724,25 @@ footer address p a img {
 
 footer nav {
     line-height: 30px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 500px){
+    .haut nav ol{
+        margin-top:70px;
+        margin-bottom:50px;
+    }
+
+    .angles{
+        top:50px;
+    }
+
+    .angles img{
+        max-width:50px;
+    }
 }
